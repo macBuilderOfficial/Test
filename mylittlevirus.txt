@@ -1,0 +1,12 @@
+remove this and save it as .vbs
+' Initialize a counter to keep track of how many times the message box has been closed
+Dim counter
+counter = 0
+
+' Infinite loop to keep the message box appearing only when closed
+Do
+    ' Show the message box and wait for user action
+    MsgBox "You have closed this " & (counter + 1) & " times.", vbOKOnly, "Persistent Alert"
+    ' Increment the counter each time the message box is closed
+    counter = counter + 1
+Loop
